@@ -1,11 +1,25 @@
 # Changelog
 
-<!-- ## v0.3.0 ...
+<!-- ## v0.4.0 ...
 **Release Date**: ...
 
 - summary point goes here
 
 --- -->
+
+## v0.3.0 PostgreSQL Database Setup with Neon & Environment Variables
+**Release Date**: December 5, 2025
+
+- Set up a Neon-hosted PostgreSQL database for the backend.
+- Added all required Postgres credentials to `.env` and removed unused `ENDPOINT_ID`.
+- Organized and documented environment variables for Postgres + Arcjet.
+- Integrated Arcjet SDK and added development-only configuration environment variable.
+- Created `config/db.js` with a reusable SQL client using `@neondatabase/serverless`.
+- Implemented `initDB()` to initialize the database and create the `products` table if missing.
+- Updated `server.js` to run the DB initialization *before* starting the server.
+- Verified successful table creation via the Neon dashboard.
+
+---
 
 ## v0.2.0 Organizing the Backend Project Structure
 **Release Date**: December 4, 2025
