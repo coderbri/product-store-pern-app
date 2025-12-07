@@ -1,11 +1,25 @@
 # Changelog
 
-<!-- ## v0.6.0 ...
+<!-- ## v0.7.0 ...
 **Release Date**: ...
 
 - summary point goes here
 
 --- -->
+
+## v0.6.0 Add Rate Limiting, Bot Detection, and Arcjet Middleware
+**Release Date**: December 7, 2025
+
+- Implemented full Arcjet configuration using `tokenBucket`, `shield`, and `detectBot` protections.
+- Created `backend/lib/arcjet.js` with reusable Arcjet client and middleware rules.
+- Added environment variables (`ARCJET_ENV`, `ARCJET_KEY`) and documented their roles.
+- Connected Arcjet to `server.js` using middleware to enforce rate limiting and bot detection.
+- Added request-level token consumption (`requested: 1`) inside the middleware.
+- Added logic to respond to `429 Too Many Requests`, suspicious bots, and spoofed bots.
+- Documented how the token bucket algorithm works and why it protects against abusive traffic.
+- Improved backend security by blocking malicious traffic and enforcing stable request flow.
+
+---
 
 ## v0.5.0 Testing All Product Endpoints with Postman
 **Release Date**: December 7, 2025
