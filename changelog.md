@@ -7,7 +7,7 @@
 
 --- -->
 
-## v0.4.0 Product Routes Connected to PostgreSQL
+## v0.4.0 Updated Routes and Controllers Setup with Test Endpoints
 **Release Date**: December 6, 2025
 
 - Expanded `productRoutes.js` to include all product-related endpoints for testing (`GET`, `POST`, `PUT`, `DELETE`).
