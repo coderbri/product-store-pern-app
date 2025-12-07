@@ -1,11 +1,24 @@
 # Changelog
 
-<!-- ## v0.5.0 ...
+<!-- ## v0.6.0 ...
 **Release Date**: ...
 
 - summary point goes here
 
 --- -->
+
+## v0.5.0 Testing All Product Endpoints with Postman
+**Release Date**: December 7, 2025
+
+- Fixed SQL queries for creating and updating products that previously caused POST and PUT requests to fail.
+- Successfully tested all CRUD endpoints (GET all, GET one, POST, PUT, DELETE) using Postman.
+- Created a Postman collection with organized requests for each product endpoint.
+- Verified JSON success responses and database updates via the Neon dashboard.
+- Confirmed descending ordering of products using the controller's SQL query.
+- Ensured each controller method returns clear response data for debugging and frontend integration readiness.
+- Validated that the backend is stable and prepared for implementing rate limiting and bot detection.
+
+---
 
 ## v0.4.0 Updated Routes and Controllers Setup with Test Endpoints
 **Release Date**: December 6, 2025

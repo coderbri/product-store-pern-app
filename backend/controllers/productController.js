@@ -28,7 +28,7 @@ export const createProduct = async (req, res) => {
         const newProduct = await sql`
             INSERT INTO products (name, price, image)
             VALUES (${name},${price},${image})
-            RETURN *
+            RETURNING *
         `;
         
         console.log(" > Product created successfully!", newProduct);
@@ -76,7 +76,7 @@ export const updateProduct = async (req, res) => {
         }
         
         console.log(" > Product updated successfully!", updatedProduct[0] );
-        res.status(200).json({ success: true, data: product });
+        res.status(200).json({ success: true, data: updatedProduct });
     } catch (error) {
         console.log(" > (!) ERROR in `updateProduct` function:", error);
         res.status(500).json({ success: false, message: "Internal Server Error" });
