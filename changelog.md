@@ -1,11 +1,23 @@
 # Changelog
 
-<!-- ## v0.4.0 ...
+<!-- ## v0.5.0 ...
 **Release Date**: ...
 
 - summary point goes here
 
 --- -->
+
+## v0.4.0 Product Routes Connected to PostgreSQL
+**Release Date**: December 6, 2025
+
+- Expanded `productRoutes.js` to include all product-related endpoints for testing (`GET`, `POST`, `PUT`, `DELETE`).
+- Updated `productController.js` to query the PostgreSQL database using the Neon SQL client.
+- Implemented `getAllProducts` controller to fetch products directly from the database.
+- Replaced hardcoded placeholder data with live DB-driven results.
+- Ensured error handling returns consistent JSON responses for failed queries.
+- Confirmed `/api/products` successfully returns data from the Postgres `products` table.
+
+---
 
 ## v0.3.0 PostgreSQL Database Setup with Neon & Environment Variables
 **Release Date**: December 5, 2025
