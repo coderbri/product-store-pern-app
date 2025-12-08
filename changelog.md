@@ -1,11 +1,25 @@
 # Changelog
 
-<!-- ## v0.7.0 ...
+<!-- ## v0.8.0 ...
 **Release Date**: ...
 
 - summary point goes here
 
 --- -->
+
+## v0.7.0 – Frontend Setup with React
+**Release Date**: December 8, 2025
+
+- Initialized the frontend using **Vite with React + JavaScript**
+- Removed boilerplate files and prepared a clean project structure
+- Installed and configured Tailwind CSS v3 and daisyUI v4
+- Added core frontend libraries (React Router, Axios, Zustand, react-hot-toast, lucide-react)
+- Implemented initial folder structure for components and pages
+- Created `HomePage`, `ProductPage`, and `Navbar` components
+- Set up React Router and global layout with persistent Navbar
+- Wrapped the app with `BrowserRouter` in `main.jsx` to enable routing
+
+---
 
 ## v0.6.0 Add Rate Limiting, Bot Detection, and Arcjet Middleware
 **Release Date**: December 7, 2025
