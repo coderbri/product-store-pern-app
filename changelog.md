@@ -1,11 +1,24 @@
 # Changelog
 
-<!-- ## v0.8.0 ...
+<!-- ## v0.9.0 ...
 **Release Date**: ...
 
 - summary point goes here
 
 --- -->
+
+## v0.8.0 – Navbar & Theme Selector
+**Release Date**: December 9, 2025
+
+- Added a fully responsive persistent Navbar with logo, title, theme selector, and conditional shopping bag icon
+- Implemented a dropdown-based Theme Selector sourced from a centralized THEMES constant
+- Added global theme state management using Zustand
+- Enabled persistent theme preference using localStorage
+- Applied dynamic DaisyUI theming across the entire app via the data-theme attribute
+- Connected ThemeSelector to the global store for real-time theme updates
+- Updated App.jsx to apply themes globally and maintain a structured layout
+
+---
 
 ## v0.7.0 – Frontend Setup with React
 **Release Date**: December 8, 2025
